@@ -1,2 +1,2 @@
-# CH_Fooundation
+# CH_Foundation
  Chebib Foundation Site
