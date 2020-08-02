@@ -50,6 +50,31 @@
 						</div>
 					</div>
 				</div>
+
+
+			</style> 
+			<script src= 
+		"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+			</script> 
+		
+			<script> 
+				/* Add "https://api.ipify.org?format=json" statement 
+				this will communicate with the ipify servers in 
+				order to retrieve the IP address $.getJSON will 
+				load JSON-encoded data from the server using a 
+				GET HTTP request */ 
+		
+				$.getJSON("https://api.ipify.org?format=json", 
+												function myFunction(data) { 
+		
+					// Setting text of element P with id gfg 
+					$("#user_ip").html(data.ip); 
+					return user_ip;
+				}) 
+				
+				document.getElementById("user_ip").innerHTML = myFunction(); 
+			</script> 
+
 			</header>
 			<!-- End Header Area -->
 
@@ -399,6 +424,9 @@
 			-->
 			<!-- End donate Area -->
 
+
+			<p id="demo"></p>
+			
 			<!-- Start contact -->
 			<section class="donate-area relative section-gap" id="contactus">
 				
@@ -407,7 +435,7 @@
 						<!-- modify this form HTML and place wherever you want your form -->
 						<form id="contactform" style="background-color:rgb(183, 186, 190);" method="POST">
 					
-							<h2 class="text-white"><br><br>Contact Us</h2> 
+							<h2 class="text-white"><br><br>Contact Us  <p id="user_ip"></p>  </h2> 
 							<div class="control-group">
 								<div class="text-white floating-label-form-group controls mb-0 pb-2">
 									<label for='name'>Name</label>            
@@ -438,7 +466,9 @@
 									<textarea class="form-control" id='message_Chebib_Foundation' name='message_Chebib_Foundation' placeholder='Message' rows='4' cols='50' required="required" data-validation-required-message="Please enter a message."></textarea>
 								</div>
 							</div>								
+							
 							<input type="text" name="_gotcha" style="display:none" />
+							<input type="text" name=#user_ip  style="display:none" />
 
 							<button id="sendMessage">Send</button>
 
@@ -545,5 +575,6 @@
 			<script src="js/jquery.magnific-popup.min.js"></script>
 			<script src="js/main.js"></script>
 			<script src="js/sendMessage.js"></script>
+			<!--<script src="js/getIP.js"></script>			-->
 		</body>
 	</html>
