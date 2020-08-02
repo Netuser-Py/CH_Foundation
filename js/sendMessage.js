@@ -1,5 +1,4 @@
 // http://jsfiddle.net/228d4snb/
-
 var message = "";
 
 $("#sendMessage").on("click", function() {
