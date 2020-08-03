@@ -17,7 +17,7 @@ $("#sendMessage").on("click", function() {
     message = $("#contactform").serialize() + '&senderIP=' + ip1; 
     // alert(message);
     $.ajax({
-        url: "https://formspree.io/mnqglkeb", 
+        url: "https://formspree.io/xnqgwzrg", 
         method: "POST",
         data: {message: message},
         dataType: "json"
