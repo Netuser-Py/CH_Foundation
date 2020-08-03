@@ -68,11 +68,11 @@
 												function myFunction(data) { 
 		
 					// Setting text of element P with id gfg 
-					$("#user_ip").html(data.ip); 
-					return user_ip;
+					$("#sender_ip").html(data.ip); 
+					return sender_ip;
 				}) 
 				
-				document.getElementById("user_ip").innerHTML = myFunction(); 
+				document.getElementById("sender_ip").innerHTML = myFunction(); 
 			</script> 
 
 			</header>
@@ -435,7 +435,7 @@
 						<!-- modify this form HTML and place wherever you want your form -->
 						<form id="contactform" style="background-color:rgb(183, 186, 190);" method="POST">
 					
-							<h2 class="text-white"><br><br>Contact Us  <p id="user_ip"></p>  </h2> 
+							<h2 class="text-white"><br><br>Contact Us  <p id="sender_ip"></p>  </h2> 
 							<div class="control-group">
 								<div class="text-white floating-label-form-group controls mb-0 pb-2">
 									<label for='name'>Name</label>            
@@ -468,8 +468,8 @@
 							</div>								
 							
 							<input type="text" name="_gotcha" style="display:none" />
-			<!-- I can not get this to work. need to send: <p id="user_ip"></p> -->
-							<input type="text" name="user_ip" id=user_ip  style="display:none" />
+			<!-- I can not get this to work. need to send: <p id="sender_ip"></p> -->
+							<input type="text" name="sender_ip" id=sender_ip  style="display:none" />
 
 							<button id="sendMessage">Send</button>
 

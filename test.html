@@ -23,11 +23,11 @@
 										function myFunction(data) { 
 
 			// Setting text of element P with id gfg 
-            $("#user_ip").html(data.ip); 
-            return user_ip;
+            $("#sender_ip").html(data.ip); 
+            return sender_ip;
         }) 
         
-        document.getElementById("user_ip").innerHTML = myFunction(); 
+        document.getElementById("sender_ip").innerHTML = myFunction(); 
 	</script> 
 </head> 
 
@@ -36,7 +36,7 @@
 		<h1>GeeksforGeeks</h1> 
 		<h3>Public IP Address of user is:</h3> 
 
-        <p id="user_ip"></p>    
+        <p id="sender_ip"></p>    
 	</center> 
 </body> 
 
