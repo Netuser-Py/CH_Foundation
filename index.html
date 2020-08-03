@@ -51,29 +51,9 @@
 					</div>
 				</div>
 
-
-			</style> 
-			<script src= 
-		"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
-			</script> 
-		
-			<script> 
-				/* Add "https://api.ipify.org?format=json" statement 
-				this will communicate with the ipify servers in 
-				order to retrieve the IP address $.getJSON will 
-				load JSON-encoded data from the server using a 
-				GET HTTP request */ 
-		
-				$.getJSON("https://api.ipify.org?format=json", 
-												function myFunction(data) { 
-		
-					// Setting text of element P with id gfg 
-					$("#sender_ip").html(data.ip); 
-					return sender_ip;
-				}) 
-				
-				document.getElementById("sender_ip").innerHTML = myFunction(); 
-			</script> 
+				<script src= 
+					"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+				</script> 
 
 			</header>
 			<!-- End Header Area -->
@@ -82,14 +62,14 @@
 			<section class="banner-area relative" id="home">
 				<div class="overlay overlay-bg"></div>
 				<div class="container">
-						<div class="row fullscreen align-items-center justify-content-start" style="height: 915px;">
-							<div class="banner-content col-lg-9 col-md-12">
-								<h1>
-									Committed to Serving through Directed Giving <br>								
-								</h1>															
-								<a href="#contactus" class="btn btn-primary btn-xl">Contact Us Now</a>
-							</div>
+					<div class="row fullscreen align-items-center justify-content-start" style="height: 915px;">
+						<div class="banner-content col-lg-9 col-md-12">
+							<h1>
+								Committed to Serving through Directed Giving <br>								
+							</h1>															
+							<a href="#contactus" class="btn btn-primary btn-xl">Contact Us Now</a>
 						</div>
+					</div>
 				</div>
 			</section>
 			<!-- End banner Area -->
@@ -435,7 +415,7 @@
 						<!-- modify this form HTML and place wherever you want your form -->
 						<form id="contactform" style="background-color:rgb(183, 186, 190);" method="POST">
 					
-							<h2 class="text-white"><br><br>Contact Us  <p id="sender_ip"></p>  </h2> 
+							<h2 class="text-white"><br><br>Contact Us</h2> 
 							<div class="control-group">
 								<div class="text-white floating-label-form-group controls mb-0 pb-2">
 									<label for='name'>Name</label>            
@@ -468,9 +448,6 @@
 							</div>								
 							
 							<input type="text" name="_gotcha" style="display:none" />
-			<!-- I can not get this to work. need to send: <p id="sender_ip"></p> -->
-							<input type="text" name="sender_ip" id=sender_ip  style="display:none" />
-
 							<button id="sendMessage">Send</button>
 
 <!--
@@ -576,6 +553,5 @@
 			<script src="js/jquery.magnific-popup.min.js"></script>
 			<script src="js/main.js"></script>
 			<script src="js/sendMessage.js"></script>
-			<!--<script src="js/getIP.js"></script>			-->
 		</body>
 	</html>
